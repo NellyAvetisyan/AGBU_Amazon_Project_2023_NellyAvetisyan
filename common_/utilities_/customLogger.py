@@ -21,11 +21,11 @@ def logger(level, message, fileName=os.path.join(get_root_dir_name(), '_logs_', 
     if level == "INFO":
         logging.info(f"{level}: {message}")
     elif level == "DEBUG":
-        logging.info(f"{level}: {message}")
+        logging.debug(f"{level}: {message}")
     elif level == "WARNING":
-        logging.info(f"{level}: {message}")
+        logging.warning(f"{level}: {message}")
     elif level == "ERROR":
-        logging.info(f"{level}: {message}")
+        logging.error(f"{level}: {message}")
     elif level == "CRITICAL":
-        logging.info(f"{level}: {message}")
+        logging.critical(f"{level}: {message}")
 
