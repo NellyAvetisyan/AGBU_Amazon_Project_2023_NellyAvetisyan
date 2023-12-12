@@ -36,6 +36,7 @@ class BaseTestWithLogin(unittest.TestCase):
         loginPageObj.fill_password_field(validUser.password)
         sleep(6)  # to avoid CAPTCHA check
         loginPageObj.click_to_signin_button()
+        sleep(15) # to avoid CAPTCHA check
 
     def tearDown(self):
         self.driver.close()
